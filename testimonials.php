@@ -1,6 +1,6 @@
 <?php
 /**
- * Plugin Name: Simple Testimonials
+ * Plugin Name: Simple Testimonials for The Living Proof Institute
  * Plugin URI: https://github.com/Pressed-Solutions/testimonials
  * Description: A plugin to display testimonials with a shortcode
  * Version: 2.0
