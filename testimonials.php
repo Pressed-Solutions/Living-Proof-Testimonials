@@ -139,6 +139,16 @@ function testimonial_shortcode( $atts ) {
 }
 add_shortcode( 'testimonial', 'testimonial_shortcode' );
 
+// show full post content if a testimonal excerpt is requested, since Visual Composer doesn’t have a post_content block
+function testimonial_excerpt_full_content( $excerpt ) {
+    if ( 'testimonial' == get_post_type() ) {
+        return get_the_content();
+    } else {
+        return $excerpt;
+    }
+}
+add_filter( 'get_the_excerpt', 'testimonial_excerpt_full_content' );
+
 // Add custom metaboxes
 add_action( 'add_meta_boxes', 'testimonial_author_metabox' );
 function testimonial_author_metabox() {
