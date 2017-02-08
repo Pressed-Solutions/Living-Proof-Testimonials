@@ -50,7 +50,7 @@ function pressed_testimonials() {
         'not_found_in_trash'  => 'Not found in Trash',
     );
     $rewrite = array(
-        'slug'                => 'testimonials',
+        'slug'                => 'testimonials/all',
         'with_front'          => true,
         'pages'               => true,
         'feeds'               => true,
